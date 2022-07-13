@@ -4,7 +4,7 @@
 		<payment>
 			<P3_PaymentGateway>
 				<active>1</active>
-				<title>Pay with Payment Network</title>
+				<title>Pay with Blink</title>
                 <merchant_id>100856</merchant_id>
                 <merchant_shared_key>Circle4Take40Idea</merchant_shared_key>
                 <integration_type>hosted</integration_type>
@@ -14,6 +14,7 @@
 				<debug>n</debug>
 				<payment_action>true</payment_action>
 				<model>P3\PaymentGateway\Model\Method\P3Method</model>
+				<merchant_gateway_url>https://gateway2.blinkpayment.co.uk</merchant_gateway_url>
 			</P3_PaymentGateway>
 		</payment>
 	</default>

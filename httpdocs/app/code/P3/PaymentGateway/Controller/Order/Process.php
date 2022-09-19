@@ -96,12 +96,12 @@ class Process extends Action implements HttpPostActionInterface, HttpGetActionIn
         }
 	}
 
-    public function createCsrfValidationException(RequestInterface $request): ?InvalidRequestException
+    public function createCsrfValidationException(RequestInterface $request): InvalidRequestException
     {
         return null;
     }
 
-    public function validateForCsrf(RequestInterface $request): ?bool
+    public function validateForCsrf(RequestInterface $request): bool
     {
         return true;
     }

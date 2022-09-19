@@ -249,7 +249,7 @@ class P3Method extends AbstractMethod {
 
         //'Payment successful - amending order details';
         // Save payment information
-        $amount = number_format($data['amountReceived'] / pow(10, $data['currencyExponent']), $data['currencyExponent']);
+        $amount = number_format($data['amountReceived'] / pow(10, $data['currencyExponent']), $data['currencyExponent'], '.', '');
         // Set order status
         if ($order->getStatus() != $status) {
             $orderMessage = ($data['responseCode'] == "0" ? "Payment Successful" : "Payment Unsuccessful") . "<br/><br/>" .

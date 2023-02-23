@@ -1,4 +1,4 @@
-# P3 Payment Gateway for Magento 2
+# P3 Payment gateway for Magento 2
 
 **Compatibility**
 
@@ -24,16 +24,16 @@ bin/magento setup:upgrade && bin/magento setup:db-schema:upgrade && bin/magento 
 ```
 
 **Step 5:**
-Login to the Admin area of Magento. Click on System > Cache Management. Click on the button labelled ‘Flush Magento Cache’, located at the top right of the page.
+Login to the admin area of Magento. Click on **System** > **Cache Management**. Click on the button labelled  __Flush Magento Cache__ , located at the top right of the page.
 
 **Step 6:**
-Click on Stores > Configuration then click on Payment Methods under the Sales heading on the left-hand side of the page. All installed payment methods will be displayed.
+Click on **Stores** > **Configuration** then click on **Payment Methods** under the **Sales** heading on the left-hand side of the page. All installed payment methods will be displayed.
 
 **Step 7:**
-Click on Payment Network Gateway to expand the configuration options that you will need to fill out before you can use the module. Here you can also select the hosted or direct integration type. Debugging should be turned off during production.
+Click on **Payment Network Gateway** to expand the configuration options that you will need to fill out before you can use the module. Here you can also select the hosted or direct integration type. Debugging should be turned off during production.
 
 **Step 8:**
-Head over to the store's settings and select advanced and then system. Once on this page; change the caching type to 'Varnished'.
+Head over to the store's settings and select advanced and then system. Once on this page; change the caching type to **Varnished**.
 
 ## FAQ
 **The processing page `/paymentgateway/order/process` shows an error page (Page Not Found)**

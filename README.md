@@ -1,5 +1,3 @@
-Disclaimer: Please note that we no longer support older versions of SDKs and Modules. We recommend that the latest versions are used.
-
 # P3 Payment Gateway for Magento 2
 
 **Compatibility**
@@ -65,11 +63,12 @@ php bin/magento setup:di:compile
 **The amount, address and name appear to cache upon a checkout**
 Are you using the latest version of this module which fixes this issue?
 
-Rebrand Instructions
---------------------
+Branded Version
+----------------------------
 
-The module does not require any editing of file to be used. The options can be changed via the plugin settings.
-However, you can pre set the module default by following these instructions.
+Module is designed to be configured according to customer needs, and it could be easily branded via configuration options,
+for cases when it is needed a different name in payment methods or different defaults in configuration options
+please follow the following steps:
 
 1. Update module defaults, located in `httpdocs/app/PaymentGateway/etc/config.xml`
    

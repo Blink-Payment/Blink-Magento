@@ -390,7 +390,7 @@ class P3Method extends AbstractMethod {
 
             $orderMessage = "Payment Unsuccessful <br/><br/>" . 
                 "Message: " . $data['responseMessage'] . "<br/>" .
-                "xref: " . $data['xref'] . "<br/>";
+                "Error Code: " . $data['responseCode'] . "<br/>";
             
             $order->addStatusToHistory($status, $orderMessage, 0);
             $order->save();
